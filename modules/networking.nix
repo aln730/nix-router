@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... };
+{ config, lib, pkgs, ... }:
 
 {
   networking.hostName = "quartz";
@@ -28,7 +28,6 @@
     "net.ipv6.conf.enp1s0.accept_ra" = 2;
     "net.ipv6.conf.enp1s0.autoconf" = 1;
     "net.ipv4.conf.all.forwarding" = 1;
-    "net.ipv6.conf.all.forwarding" = 1;
     "net.ipv4.conf.default.rp_filter" = 1;
     "net.ipv4.conf.enp1s0.rp_filter" = 1;
     "net.ipv4.conf.enp2s0.rp_filter" = 1;

@@ -1,9 +1,9 @@
-{ config, lib, pkgs, ... };
+{ config, lib, pkgs, ... }:
 
 {
   services.unbound = {
     enable = true;
-    resolveLocalQuries = true;
+    resolveLocalQueries = true;
     settings = {
       server = {
         interface = [ "127.0.0.1" "192.168.1.1"];
@@ -20,7 +20,7 @@
 
         local-zone = [ '''"casa." static'' ];
         local-data = [
-          '"router.casa IN A 192.168.1.1"'
+          ''"router.casa IN A 192.168.1.1"''
         ];
       };
 

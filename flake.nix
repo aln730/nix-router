@@ -10,7 +10,7 @@
       system = "x86_64-linux";
       specialArgs = { inherit inputs; };
       modules = [
-        ./hardware-configuration.nix
+	./hardware-configuration.nix
         ./modules/networking.nix
         ./modules/dhcp.nix
         ./modules/dns.nix
