@@ -21,7 +21,18 @@
     "net.ipv4.conf.all.rp_filter" = 1;
     "net.ipv4.conf.default.rp_fitler" = 1;
     "net.ipv4.conf.all.accept_redirects" = 0;
-    "net.ipv4.conf.all.send_redirects"   = 0;
+    "net.ipv4.conf.all.send_redirects" = 0;
+    "net.ipv6.conf.all.accept_ra" = 0;
+    "net.ipv6.conf.all.autoconf" = 0;
+    "net.ipv6.conf.all.use_tempaddr" = 0;
+    "net.ipv6.conf.enp1s0.accept_ra" = 2;
+    "net.ipv6.conf.enp1s0.autoconf" = 1;
+    "net.ipv4.conf.all.forwarding" = 1;
+    "net.ipv6.conf.all.forwarding" = 1;
+    "net.ipv4.conf.default.rp_filter" = 1;
+    "net.ipv4.conf.enp1s0.rp_filter" = 1;
+    "net.ipv4.conf.enp2s0.rp_filter" = 1;
+    "net.ipv4.conf.all.src_valid_mark" = 1;
   };
 
   environment.systemPackages = with pkgs; [

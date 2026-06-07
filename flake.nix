@@ -12,6 +12,8 @@
       modules = [
         ./hardware-configuration.nix
         ./modules/networking.nix
+        ./modules/dhcp.nix
+        ./modules/dns.nix
       ];
     };
   };
