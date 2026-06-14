@@ -3,7 +3,7 @@
 {
   services.unbound = {
     enable = true;
-    resolveLocalQueries = true;
+    resolveLocalQuries = true;
     settings = {
       server = {
         interface = [ "127.0.0.1" "192.168.1.1"];
@@ -20,7 +20,7 @@
 
         local-zone = [ '''"casa." static'' ];
         local-data = [
-          ''"router.casa IN A 192.168.1.1"''
+          '"router.casa IN A 192.168.1.1"'
         ];
       };
 
